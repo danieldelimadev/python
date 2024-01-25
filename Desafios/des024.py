@@ -1,0 +1,1 @@
+city = input('Qual cidade você nasceu? ')

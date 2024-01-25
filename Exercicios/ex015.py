@@ -1,4 +1,6 @@
 d = int(input('Quantos dias alugados? '))
-k = int(input('Quantos Km rodados? '))
+km = int(input('Quantos Km rodados? '))
 pdia = d * 60
-pkm = k  * 0.15
+pkm = km * 0.15
+tot = pdia + pkm
+print('O total a pagar é de R${:.2f}'.format(tot))
