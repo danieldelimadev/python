@@ -1,25 +1,37 @@
 from random import randint
-pc = 2
+itens = ('Pedra', 'Papel', 'Tesoura')
+cpu = randint(0,2)
 print('\033[1;32mJOGO: PEDRA, PAPEL E TESOURA\033[m')
-print('\033[1;36m1- PEDRA\n2- PAPEL\n3- TESOURA\033[m')
-play = int(input('-> '))
-print('Computador jogou: {}'.format(pc))
-if play == 3 and pc == 2:
-    print('Você venceu!!!')
-elif play == 2 and pc == 1:
-    print('Você venceu!!!')
-elif play == 1 and pc == 3:
-    print('Você venceu!!!')
-elif play == 3 and pc == 1:
-    print('Você venceu!!!')
-
-elif play == 3 and pc == 2:
-    print('Você perdeu!!!')
-elif play == 2 and pc == 1:
-    print('Você perdeu!!!')
-elif play == 1 and pc == 3:
-    print('Você perdeu!!!')
-elif play == 3 and pc == 1:
-    print('Você perdeu!!!')
-elif play == pc:
-    print('Empate!!')
+print('''\033[1;36m[0] PEDRA
+[1] PAPEL
+[2] TESOURA\033[m''')
+p1 = int(input('-> '))
+print('Você jogou: {}'.format(itens[p1]))
+print('Computador jogou: {}'.format(itens[cpu]))
+if cpu == 0: #Cpu jogou pedra
+    if p1 == 0:
+        print('\033[1;36mEmpate\033[m')
+    elif p1 == 1:
+        print('\033[1;32mVocê ganhou.\033[m')
+    elif p1 == 2:
+        print('\033[1;33mVocê perdeu.\033[m')
+    else:
+        print('\033[1;31mJOGADA INVALIDA!.\033[m')
+elif cpu == 1: #Cpu jogou papel
+    if p1 == 0:
+        print('\033[1;33mVocê perdeu.\033[m')
+    elif p1 == 1:
+        print('\033[1;36mEmpate\033[m')
+    elif p1 == 2:
+        print('\033[1;32mVocê ganhou.\033[m')
+    else:
+        print('\033[1;31mJOGADA INVALIDA!.\033[m')
+elif cpu == 2: #Cpu jogou tesoura
+    if p1 == 0:
+        print('\033[1;32mVocê ganhou.\033[m')
+    elif p1 == 1:
+        print('\033[1;33mVocê perdeu.\033[m')
+    elif p1 == 2:
+        print('\033[1;36mEmpate\033[m')
+    else:
+        print('\033[1;31mJOGADA INVALIDA!.\033[m')
