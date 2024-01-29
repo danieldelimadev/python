@@ -1,4 +1,6 @@
 from random import randint
+from os import system
+system('cls')
 itens = ('Pedra', 'Papel', 'Tesoura')
 cpu = randint(0,2)
 print('\033[1;32mJOGO: PEDRA, PAPEL E TESOURA\033[m')
