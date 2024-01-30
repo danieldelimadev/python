@@ -1,15 +1,14 @@
 from os import system
 system('cls')
 print('\033[1mSEQUENCIA DE FIBONACCI\033[m')
-n = int(input('\033[1mDigite um número: \033[m'))
+n = int(input('\033[1mQuantos termos você quer ver? \033[m'))
 print('\033[1mOs {} primeiros números da sequencia de Fibonacci são.\033[m'.format(n))
 c = 0
 f1 = 0
 s = ' -> '
-s2 = ''
 while c < n:
     if c == n - 1:
-        s = ''
+        s = '\033[1;32m FIM\033[m '
     if c == 1:
         f3 = f1
         f1 = 1

@@ -23,12 +23,15 @@ while c != 5:
         calc = n1 * n2 
         res = ('O produto é {}'.format(calc))
     elif c == 3:
-        if n1 > n2:
-            maior = n1
-            res = ('O maior número é {}'.format(maior))
+        if n1 == n2:
+            res = 'Os dois valores são iguais.'
         else:
-            maior = n2
-            res = ('O maior número é {}'.format(maior))
+            if n1 > n2:
+                maior = n1
+                res = ('O maior número é {}'.format(maior))
+            else:
+                maior = n2
+                res = ('O maior número é {}'.format(maior))    
     elif c == 4:
         n1 = int(input('\033[1mDigite o 1º número: \033[m'))
         n2 = int(input('\033[1mDigite o 2º número: \033[m'))
