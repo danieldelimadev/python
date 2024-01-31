@@ -1,10 +1,7 @@
 from os import system
 system('cls')
-totg = 0
-totp1000 = 0
-npmb = ''
-ppmb = 0
-cont = 0
+totg = totp1000  = ppmb = cont = 0
+npmb = '' 
 print('''============================= 
        \033[1;36mMAGAZINE LUIZA\033[m
 =============================''')
@@ -15,13 +12,11 @@ while True:
     while res not in 'SsNn':
         res = str(input('Comprar outro produto? [S/N] '))
     totg += pp
-    if cont == 0:
+    if cont == 0 or pp < ppmb:
         ppmb = pp
+        npmb = np
     if pp > 1000:
         totp1000 += 1
-    if pp < ppmb:
-        pmb = pp
-        npmb = np
     if res in 'Nn':
         break
     cont += 1

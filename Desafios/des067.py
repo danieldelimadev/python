@@ -1,7 +1,6 @@
 from os import system
 system('cls')
-while True:
-    
+while True:  
     print('-' * 34)
     t = int(input('Quer ver a tabuada de qual número? '))
     print('-' * 34)

@@ -1,7 +1,6 @@
 from os import system
 system('cls')
-cont = 0
-soma = 0
+soma = cont = 0
 while True:
     n = int(input('Digite um número (para parar 999): '))
     if n == 999:
