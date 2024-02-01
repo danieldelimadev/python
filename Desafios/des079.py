@@ -19,5 +19,5 @@ while True:
         system('cls')
         c = 0
     c += 1
-org = num.sort()
+num.sort()
 print(f'\033[1m{num}\033[m')
