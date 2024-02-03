@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 jogo = []
 jogadas = []
 print('\033[1m-' * 32)
@@ -19,6 +20,8 @@ for c in range(0, q):
     jogadas.clear()
 cont = 1
 for p in range(0, q):
+    jogo[p].sort()
     print(f'Jogo {cont}: {jogo[p]}')
     cont += 1
+    sleep(0.7) 
 print('-=' * 5, '< BOA SORTE! >', '-=' * 5)
