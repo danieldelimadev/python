@@ -10,5 +10,7 @@ def factorial(a, s = False):
     for c in range(a, 0, -1):
         f *= c
     return f
+
+
 print('-' * 30)    
 print(factorial(5))
