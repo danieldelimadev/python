@@ -100,7 +100,9 @@ def menu():
                 print('-' * 30)
                 nome = str(input('Nome: '))
                 idade = ReadInt('Idade: ')
+                print(f'<{nome} cadastrado com sucesso>')
                 cadastrar(arq, nome , idade)
+
             else:
                 print('Saindo...')
                 break
